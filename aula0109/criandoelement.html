@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>lista</h1>
+    <div>
+        <input type="text" id="inputtxt">
+        <button id="btnadd"> add </button>
+    </div>
+    <div id="lista">
+    </div>
+    
+    <script>
+        
+        function adicionar () {
+            let inputtxt = document.querySelector('#inputtxt');
+
+            let item = document.createElement("p");
+            item.innerText = inputtxt.value;
+
+            let lista = document.querySelector("#lista");
+            lista.appendChild(item);
+        }
+        
+
+        let btnadd = document.querySelector("#btnadd")
+
+        btnadd.addEventListener("click", adicionar)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Aula 01092023
+    </h1>
+    <h2>
+        window.innerHeight retorna  a altura da tela
+    </h2>
+    <h2>
+        h2 testanto
+    </h2>
+    <button>click</button>
+    <script>
+        //alert('height '+window.innerHeight)
+        //alert('width '+window.innerWidth)
+
+        let title = document.querySelector('h1');
+        //title.remove()
+
+        let array_h = document.querySelectorAll('h1, h2')
+
+        array_h[0].innerHTML = "mudando texto"
+
+
+        let button = document.querySelector('button');
+        button.onclick = function (event) {
+            alert("click");
+            console.log("hahahah");
+            console.log(event.target);
+        }
+
+        
+    </script>
+</body>
+</html>
