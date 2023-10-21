@@ -1,6 +1,9 @@
 import apikey from "./env.js";
 
-let url = "https://newsapi.org/v2/everything?q=tesla&from=2023-09-21&sortBy=publishedAt&apiKey=2a6927b988284b7b8f6466c6bc7f3176"
+let search = "tesla"
+let date = "2023-09-21"
+
+let url = `https://newsapi.org/v2/everything?q=${search}&from=${date}&sortBy=publishedAt&apiKey=${apikey}`
 let list = document.querySelector("#list");
 
 function RenderNews(news) {
@@ -37,3 +40,22 @@ fetch(url)
 .then((response)=>response.json())
 .then((json)=>{RenderNews(json)})
 .catch((error)=>{alert("erro")});
+
+function searchNews() {
+    let child = list.lastElementChild; 
+    while (child) {
+        list.removeChild(child);
+        child = list.lastElementChild;
+    }
+
+
+    search = document.querySelector("input").value
+    date = "2023-09-21";
+    url = `https://newsapi.org/v2/everything?q=${search}&from=${date}&sortBy=publishedAt&apiKey=${apikey}`;
+    fetch(url)
+    .then((response)=>response.json())
+    .then((json)=>{RenderNews(json)})
+    .catch((error)=>{alert("erro")});
+}
+
+document.querySelector("button").addEventListener("click", searchNews)
