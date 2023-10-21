@@ -10,7 +10,20 @@ class Person {
     }
 }
 
+class Employee extends Person {
+    constructor (name, age, cpf, office) {
+        super(name, age, cpf);
+        this.office = office;
+    }
 
-const person = new Person("jose", 18, "12345");
-console.log(person.name)
-console.log(person.year())
+    Info () {
+        console.log(this.name);
+        console.log(this.cpf);
+        console.log(this.age);
+        console.log(this.office);
+        console.log(this.year());
+    }
+}
+
+const employee = new Employee("jose", 18, "1234-9", "gerente");
+employee.Info();
