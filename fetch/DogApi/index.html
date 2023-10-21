@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Api</title>
+</head>
+<body>
+    <h1>Random dog image</h1>
+    <p>Refresh the page</p>
+    <img id="imagem" src="" alt="dog">
+    <script>
+        let img = document.querySelector("#imagem");
+        fetch("https://dog.ceo/api/breeds/image/random")
+        .then(
+            (response) => response.json())
+        .then(
+         (json) => {
+            console.log(json.message);
+            img.setAttribute("src", json.message);
+            
+        });
+    </script>
+</body>
+</html>
