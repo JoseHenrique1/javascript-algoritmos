@@ -1,12 +1,39 @@
 import apikey from "./env.js";
 
 let url = "https://newsapi.org/v2/everything?q=tesla&from=2023-09-21&sortBy=publishedAt&apiKey=2a6927b988284b7b8f6466c6bc7f3176"
+let list = document.querySelector("#list");
 
-function setList(news) {
-    document.querySelector("#title").innerText = news.articles[0].author;
+function RenderNews(news) {
+    let k = 0;
+    for (k = 0; k<5; k++) {
+        let currentNew = news.articles[k];
+        let article = elementArticle(currentNew.author, currentNew.title, currentNew.description, currentNew.urlToImage, currentNew.url);
+        list.appendChild(article);
+    }
+}
+
+function elementArticle(author, title, description, urlImage, urlSite){
+    let h1 = document.createElement("h1");
+    h1.innerText = title;
+
+    let p = document.createElement("p");
+    p.innerText = description;
+    
+    let credits = document.createElement("p");
+    credits.innerText = `Por ${author}, acessado em ${urlSite}`;
+
+    let img = document.createElement("img");
+    img.setAttribute("src", urlImage);
+
+    let article = document.createElement("article");
+    article.appendChild(h1);
+    article.appendChild(p);
+    article.appendChild(credits);
+    article.appendChild(img);
+    return article;
 }
 
 fetch(url)
 .then((response)=>response.json())
-.then((json)=>{setList(json)})
+.then((json)=>{RenderNews(json)})
 .catch((error)=>{alert("erro")});
