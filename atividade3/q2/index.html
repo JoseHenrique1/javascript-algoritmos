@@ -9,9 +9,9 @@
     <body>
         <form class="container" action="">
             <h2>Bank Registration</h2>
-            <input type="text" name="name" id="">
-            <input type="text" name="" id="">
-            <input type="number" name="balance" id="">
+            <input required type="text" name="name" id="" placeholder="Name">
+            <input required type="text" name="document" id="" placeholder="Document">
+            <input required type="number" name="balance" id="" placeholder="Balance">
             <input class="btn primary" type="submit" value="Sing up">
         </form>
 
@@ -21,11 +21,12 @@
 
                 <div>
                     Jose
-                    <button class="btn secondary">+100</button>
+                    <button id="button" class="btn secondary">+100</button>
                     <button class="btn danger">-100</button>
                 </div>
                 
             </div>
         </section>
+        <script src="script.js"></script>
     </body>
 </html>
