@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    background-color: lightblue;
+    max-width: 50%;
+    margin: 20px auto;
+}
+form > * {
+    margin: 5px 0px;
+}
+
