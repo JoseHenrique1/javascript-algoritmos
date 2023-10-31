@@ -16,6 +16,25 @@ body {
     box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.2);
 }
 
+.item {
+    background-color: lightseagreen;
+    border-radius: 1.5em;
+    padding: 1em;
+    margin: 1em 0em;
+}
+
+.item > * {
+    margin: 0px 0px;
+}
+
+.container-btns {
+    display: flex;
+}
+
+.container-btns > * {
+    margin-left: 1em;
+}
+
 form > * {
     margin: 5px 0px;
 }
