@@ -39,7 +39,7 @@ function elementArticle(author, title, description, urlImage, urlSite){
 fetch(url)
 .then((response)=>response.json())
 .then((json)=>{RenderNews(json)})
-.catch((error)=>{alert("erro")});
+.catch((error)=>{alert("erro na requisição")});
 
 function searchNews() {
     let child = list.lastElementChild; 
