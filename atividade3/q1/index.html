@@ -4,20 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Bank</title>
+        <title>Eventos</title>
     </head>
     <body>
         <form class="container" action="">
-            <h2>Bank Registration</h2>
-            <input required type="text" name="name" id="" placeholder="Name">
-            <input required type="text" name="document" id="" placeholder="Document">
-            <input required type="number" name="balance" id="" placeholder="Balance">
-            <input class="btn primary" type="submit" value="Sing up">
+            <h2>Registro de eventos</h2>
+            <input required type="text" name="name" id="name" placeholder="Name">
+            <input type="datetime-local" name="datetime-local" id="datetimeLocal">
+            <input class="btn primary" type="submit" value="Adicionar">
         </form>
 
         <section class="container">
-            <h2>Customers</h2>
-            <div id="list">   
+            <h2>Eventos</h2>
+            <div id="list">  
+                <div class="item">
+                    <p>aniversario de fulano</p>
+                    <p> 10/10/2010 21:00</p>
+                </div> 
+                <div class="item">
+                    <p>aniversario de fulano</p>
+                    <p> 10/10/2010 21:00</p>
+                </div> 
+                <div class="item">
+                    <p>aniversario de fulano</p>
+                    <p> 10/10/2010 21:00</p>
+                </div> 
             </div>
         </section>
         <script src="script.js"></script>
