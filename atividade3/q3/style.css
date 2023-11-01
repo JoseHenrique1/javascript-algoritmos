@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    background-color: lightblue;
+    max-width: 50%;
+    margin: 20px auto;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.2);
+}
+
+.item {
+    background-color: lightseagreen;
+    border-radius: 1.5em;
+    padding: 1em;
+    margin: 1em 0em;
+}
+
+.item > * {
+    margin: 0px 0px;
+}
+
+.container-btns {
+    display: flex;
+}
+
+.container-btns > * {
+    margin-left: 1em;
+}
+
+form > * {
+    margin: 5px 0px;
+}
+
+.btn {
+    display: flex;
+    padding: 1em 0.5em;
+    border: none;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary{
+    background-color: rgba(0, 50, 255, 1);
+    color: white;
+}
+
+.secondary {
+    background-color: rgba(50, 50, 50, 1);
+    color: white;
+}
+
+.danger {
+    background-color: rgb(255, 0, 50, 1);
+    color: white;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}

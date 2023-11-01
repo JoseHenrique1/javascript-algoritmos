@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Transação</title>
+</head>
+<body>
+    <form class="container" action="">
+        <h2>Registro de transação</h2>
+        <input required type="text" name="description" id="" placeholder="Descrição">
+        <input required type="number" name="balance" id="" placeholder="Saldo">
+        <input class="btn primary" type="submit" value="Adicionar">
+    </form>
+    <section class="container">
+        <table>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+            </tr>
+        </table>
+        <p id="balance">Saldo : 0 reais</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
