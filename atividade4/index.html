@@ -10,14 +10,14 @@
     <body>
 
         <section class="container p-3 mt-3 mb-3 bg-body-secondary">
-            <form action="container">
+            <form action="">
                 <div class="mb-3">
                     <label for="produto" class="form-label">Produto</label>
-                    <input type="text" class="form-control" id="produto" placeholder="Digite o nome do produto">
+                    <input type="text" class="form-control" id="produto" placeholder="Digite o nome do produto" required />
                 </div>
                 <div class="mb-3">
                     <label for="preco" class="form-label">Preço</label>
-                    <input type="text" class="form-control" id="preco" placeholder="Digite o preço do produto">
+                    <input type="text" class="form-control" id="preco" placeholder="Digite o preço do produto" required />
                 </div>
                 <input class="btn btn-primary" type="submit" value="Cadastrar">
             </form>
@@ -42,6 +42,8 @@
                     </tr>
                 </tbody>
             </table>
-        </section>        
+        </section> 
+        
+        <script src="./index.js" type="module" ></script>
     </body>
 </html>
