@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+        <title>Atividade 4</title>
+    </head>
+    <body>
+
+        <section class="container p-3 mt-3 mb-3 bg-body-secondary">
+            <form action="container">
+                <div class="mb-3">
+                    <label for="produto" class="form-label">Produto</label>
+                    <input type="text" class="form-control" id="produto" placeholder="Digite o nome do produto">
+                </div>
+                <div class="mb-3">
+                    <label for="preco" class="form-label">Preço</label>
+                    <input type="text" class="form-control" id="preco" placeholder="Digite o preço do produto">
+                </div>
+                <input class="btn btn-primary" type="submit" value="Cadastrar">
+            </form>
+        </section>
+
+        <section class="container d-flex justify-content-around flex-xl-wrap p-3 bg-body-secondary">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Comprado</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Mouse</th>
+                        <td> 10,00 R$ </td>
+                        <td><input class="form-check-input" name="produto" type="checkbox"></td>
+                        <td><i class="btn btn-outline-danger bi bi-trash"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>        
+    </body>
+</html>
