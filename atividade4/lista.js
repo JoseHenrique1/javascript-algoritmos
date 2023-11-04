@@ -11,10 +11,19 @@ function adicionar (nome, preco) {
     localStorage.setItem("lista", JSON.stringify( [...lista, produto]));
 }
 
+function listar () {
+    return JSON.parse(localStorage.getItem("lista")) || [];
+}
+
+function remover (produto) {
+    let lista = JSON.parse( localStorage.getItem("lista") );
+    lista.splice(lista.indexOf(produto), 1);
+    localStorage("lista", lista);
+}
 
 
 
 
 
 
-export {adicionar};
+export {adicionar, listar, remover};
