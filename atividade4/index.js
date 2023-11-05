@@ -1,15 +1,19 @@
-import { adicionar, listar, remover } from "./lista.js"
+import { adicionar, listar, remover, comprar } from "./lista.js"
 
+//cria a linha da tabela com os dados
 function rowHtml (produto) {
     let row = document.createElement('tr');
     let nome = document.createElement('th');
     nome.innerText = produto.nome;
     let preco = document.createElement('td');
-    preco.innerText = produto.preco;
+    preco.innerText = produto.preco + " R$";
 
     let comprado = document.createElement('td');
     let checkbox = document.createElement('input');
     checkbox.setAttribute("type", "checkbox");
+    checkbox.setAttribute("class", "form-check-input")
+    checkbox.checked = produto.comprado;
+    checkbox.addEventListener("click", ()=>{comprar(produto.id)})
     comprado.appendChild(checkbox);
 
     let excluir = document.createElement('td');
@@ -22,10 +26,7 @@ function rowHtml (produto) {
         remover(produto);
     })
 
-    row.appendChild(nome);
-    row.appendChild(preco);
-    row.appendChild(comprado);
-    row.appendChild(excluir);
+    row.append(nome, preco, comprado, excluir);
     return row;
 }
 
@@ -36,15 +37,10 @@ document.querySelector("form").addEventListener("submit", (e)=>{
 })
 
 
-
-
 document.querySelector("body").onload = ()=> {
     let tbody = document.querySelector("tbody");
-    let lista = listar();
-    console.log(lista)
-    for (let produto of lista) {
-        console.log(produto)
+    listar().forEach(produto => {
         let row = rowHtml(produto);
         tbody.appendChild(row)
-    }
+    });
 } 
