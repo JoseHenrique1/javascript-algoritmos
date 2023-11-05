@@ -25,9 +25,9 @@ function remover (produto) {
 
 function comprar (id) {
     let lista = JSON.parse( localStorage.getItem("lista") );
-    let produto = lista.filter((item)=>item.id == id);
-    produto = produto[0]; 
-    lista[lista.indexOf(produto)].comprado = produto.comprado? false: true;
+    let lista_ids = lista.map((item)=>item.id);
+    let index = lista_ids.indexOf(id);
+    lista[index].comprado = !(lista[index].comprado)
     localStorage.setItem('lista', JSON.stringify(lista));
 }
 
