@@ -17,7 +17,9 @@ function listar () {
 
 function remover (produto) {
     let lista = JSON.parse( localStorage.getItem("lista") );
-    lista.splice(lista.indexOf(produto), 1);
+    // lista com os id
+    let lista_ids = lista.map((item)=>item.id);
+    lista.splice(lista_ids.indexOf(produto.id), 1);
     localStorage.setItem("lista", JSON.stringify(lista));  
 }
 
