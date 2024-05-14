@@ -1,0 +1,151 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background: aqua;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: rgb(44, 44, 109);
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo {
+    font-size: 40px;
+    text-shadow: 2px 2px 1px  black;
+    color: white;
+
+}
+
+
+/*form*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    box-shadow: 3px 3px 9px black;
+    
+    background-color: lightgray;
+    padding: 10px 10px 10px 10px;
+
+}
+
+
+
+
+
+
+
+.bloco-nome {
+    padding: 10px 10px 10px 10px;
+}
+
+.bloco-notas {
+    padding: 10px 10px 10px 10px;
+}
+
+.labelnome {
+    font-size: 20px;
+}
+
+.inputnome {
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 5px 5px 5px 15px;
+}
+
+.labelnota {
+    font-size: 20px;
+}
+
+.inputnota {
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 5px 5px 5px 15px;
+}
+
+.bloco-botoes {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    justify-content:space-around;
+
+}
+
+.button {
+    font-size: 30px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/*section*/
+
+section {
+    display: flex;
+    width: 45%;
+    border-radius: 10px;
+     
+    flex-direction: column;
+    
+}
+.section-div {
+    
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    border-radius: 10px;
+    border-top: 1px solid blue; 
+    background-color: lightgray;
+    box-shadow: 3px 3px 9px black;
+
+    margin-top: 10px;
+    
+    padding: 10px 10px 10px 10px;
+}
+
+.topo {
+    flex-grow: 1;
+    height: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.section-dados {
+    flex-grow: 1;
+    font-size: 20px;
+}
+#section-res {
+    font-size: 25px;
+}
+
+
+footer{
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    height:70px;
+    background-color: rgb(44, 44, 109);
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    margin: 50px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    
+}

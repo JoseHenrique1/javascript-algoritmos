@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Medias dos alunos</title>
+</head>
+<body>
+
+	<header>
+		<h1 class="titulo">Calculador de medias</h1>
+	</header>
+	
+	
+    <form id="form">
+		
+		<h2>Coloque notas de 0 - 10</h2>
+
+
+
+		<div class="bloco-nome" >
+			<label class="labelnome" for="nome">Nome completo: </label>
+			<input class="inputnome" type="text" name="nome" id="nome" required>
+			<br>
+		</div>
+		
+		<div class="bloco-notas">
+			<label class="labelnota" for="notas">Nota do 1° Bimestre: </label>
+			<input class="inputnota" type="number" name="notas" id="notaum" min="0" max='10' required>
+		</div>
+		<div class="bloco-notas">
+			<label class="labelnota" for="notas">Nota do 2° Bimestre: </label>
+			<input class="inputnota" type="number" name="notas" id="notadois" min="0" max='10' required>
+		</div>
+		<div class="bloco-notas">
+			<label class="labelnota" for="notas">Nota do 3° Bimestre: </label>
+			<input class="inputnota" type="number" name="notas" id="notatres" min="0" max='10' required>
+		</div>
+		<div class="bloco-notas">
+			<label class="labelnota" for="notas">Nota do 4° Bimestre: </label>
+			<input class="inputnota" type="number" name="notas" id="notaquatro" min="0" max='10' required>
+		</div>
+	
+		<div class="bloco-botoes">
+			<input class="button" type="button" name="enviar" id="enviar" value="Enviar"  >
+			<input class="button" type="reset" name="resetar" id="resetar">
+		</div>
+
+	</form>
+
+
+
+	<section>
+		<div id="topo" class="section-div topo">
+			<h1 class="section-dados" id="section-res">Resultado</h1>
+		</div>
+		
+		<div class="section-div">
+			<p class="section-dados" id="section-nome">Nome: </p>
+			<p class="section-dados" id="section-media">Media: </p>
+			<p class="section-dados" id="section-notaf"></p>
+			
+		</div>
+	</section>
+
+	<footer>
+		<p id="erros"></p>
+	</footer>
+    
+
+
+
+
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+    <h1 class="grupo">Grupo: José Henrique Araujo da Silva e Islan Pereira de Oliveira</h1>
+    <div class="questao">
+        <h1>Questão 1</h1>
+        <h3>Escreva um programa que leia três números inteiros e calcule a sua média aritmética.</h3>
+        <input type="number" id="num">
+        <input type="number" id="ndois">
+        <input type="number" id="ntres">
+        <input type="button" value="Calcular" onclick="q1()">
+        <p id="q1media"></p>
+    </div>
+
+    <div class="questao">
+        <h1>Questão 2</h1>
+        <h3>Escreva um programa que leia o valor do lado de um quadrado e calcule a sua área e o seu perímetro.</h3>
+        <input type="number" id="lado">
+        <input type="button" value="Calcular" onclick="q2()">
+        <p id="q2res"></p>
+    </div>
+
+    <div class="questao">
+        <h1>Questão 3</h1>
+        <h3>Escreva um programa que leia o número inteiro positivo e calcule o seu dobro, o seu triplo, o seu quadrado, o seu cubo e a sua raiz quadrada.</h3>
+        <input type="number" id="inteiro">
+        <input type="button" value="Calcular" onclick="q3()">
+        <p id="q3res"></p>
+    </div>
+
+    <div class="questao">
+        <h1>Questão 4</h1>
+        <h3>Escreva um programa que leia o valor do raio de uma circunferência e calcule a sua área e o seu comprimento.</h3>
+        <input type="number" id="raio">
+        <input type="button" value="Calcular" onclick="q4()">
+        <p id="q4res"></p>
+    </div>
+
+    <div class="questao">
+        <h1>Questão 5</h1>
+        <h3>Escreva um programa que leia o valor da base e da altura de um triângulo e calcule a sua área.</h3>
+        <input type="number" id="base" placeholder="">
+        <input type="number" id="altura" placeholder="">
+        <input type="button" value="Calcular" onclick="q5()">
+        <p id="q5res"></p>
+    </div>
+
+    <div class="questao">
+        <h1>Questão 6</h1>
+        <h3>Escreva um programa que leia o valor de uma temperatura em Celsius e calcule o seu valor correspondente em Fahrenheit e em Kelvin.</h3>
+        <input type="number" id="temperatura" placeholder="">
+        <input type="button" value="Calcular" onclick="q6()">
+        <p id="q6res"></p>
+    </div>
+
+    <div class="questao">
+        <h1>Questão 7</h1>
+        <h3>Escreva um programa que leia o valor dos dois catetos de um triângulo retângulo e calcule o valor da hipotenusa.</h3>
+        <input type="number" id="catetoum" placeholder="">
+        <input type="number" id="catetodois" placeholder="">
+        <input type="button" value="Calcular" onclick="q7()">
+        <p id="q7res"></p>
+    </div>
+
+    <div class="questao">
+        <h1>Questão 8</h1>
+        <h3>Escreva um programa que leia um valor em polegadas e o converta para centímetros, considerando que uma polegada equivale a 2.54 cm.</h3>
+        <input type="number" id="polegada" placeholder="">
+        <input type="button" value="Calcular" onclick="q8()">
+        <p id="q8res"></p>
+    </div>
+
+    <div class="questao">
+        <h1>Questão 9</h1>
+        <h3>Escreva um programa que leia uma palavra e calcule o seu comprimento.</h3>
+        <input type="texto" id="texto" placeholder="">
+        <input type="button" value="Calcular" onclick="q9()">
+        <p id="q9res"></p>
+    </div>
+
+    <div class="questao">
+        <h1>Questão 10</h1>
+        <h3>Escreva um programa que leia o valor de uma distância em metros e calcule o seu valor correspondente em quilômetros, hectômetros, decâmetros, centímetros, decímetros e milímetros</h3>
+        <input type="number" id="metros">
+        <input type="button" value="Calcular" onclick="q10()">
+        <p id="km"></p>
+        <p id="hec"></p>
+        <p id="dec"></p>
+        <p id="cent"></p>
+        <p id="decm"></p>
+        <p id="ml"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 11</h1>
+        <h3>Escreva um programa que leia um número inteiro e verifique se ele é par ou ímpar</h3>
+        <input type="number" id="num11">
+        <input type="button" value="Calcular" onclick="q11()">
+        <p id="exibir01"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 12</h1>
+        <h3>Escreva um programa que leia dois números inteiros M e N e verifique se N é múltiplo de M</h3>
+        <input type="number" id="num112">
+        <input type="number" id="num212">
+        <input type="button" value="Calcular" onclick="q12()">
+        <p id="exibir02"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 13</h1>
+        <h3>Escreva um programa que leia um número inteiro e verifique se ele é positivo, negativo ou neutro</h3>
+        <input type="number" id="numq13">
+        <input type="button" value="Calcular" onclick="q13()">
+        <p id="exibir03"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 14</h1>
+        <h3>Escreva um programa que leia a idade de uma pessoa e verifique se ela é criança (0-12 anos), adolescente (13-17 anos), adulta (18-59) ou idosa (acima de 60 anos)</h3>
+        <input type="number" id="idade">
+        <input type="button" value="Calcular" onclick="q14()">
+        <p id="exibir04"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 15</h1>
+        <h3>Escreva um programa que leia os valores dos três lados de um triângulo e o classifique como equilátero, isósceles ou escaleno</h3>
+        <input type="number" id="l1">
+        <input type="number" id="l2">
+        <input type="number" id="l3">
+        <input type="button" value="Calcular" onclick="q15()">
+        <p id="exibir05"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 16</h1>
+        <h3>Escreva um programa que leia três números inteiros distintos e identifique o maior número lido</h3>
+        <input type="number" id="num116">
+        <input type="number" id="num216">
+        <input type="number" id="num316">
+        <input type="button" value="Calcular" onclick="q16()">
+        <p id="exibir06"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 17</h1>
+        <h3>Escreva um programa que leia três números inteiros distintos e identifique o maior e o menor número lido</h3>
+        <input type="number" id="num117">
+        <input type="number" id="num217">
+        <input type="number" id="num317">
+        <input type="button" value="Calcular" onclick="q17()">
+        <p id="exibir07"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 18</h1>
+        <h3>Escreva um programa que leia três números distintos e identifique o número que não é nem o menor e nem o maior número</h3>
+        <input type="number" id="num118">
+        <input type="number" id="num218">
+        <input type="number" id="num318">
+        <input type="button" value="Calcular" onclick="q18()">
+        <p id="exibir08"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 19</h1>
+        <h3>Escreva um programa que leia dois operandos inteiros e um operador (+, -, *, /) e aplique o operador lido aos dois operandos, na ordem em que os mesmos foram digitados</h3>
+        <input type="number" id="num119">
+        <input type="number" id="num219">
+        <input type="text" id="operador">
+        <input type="button" value="Calcular" onclick="q19()">
+        <p id="exibir09"></p>
+    </div>
+    <div class="questao">
+        <h1>Questão 20</h1>
+        <h3>Escreva um programa que leia um número inteiro entre 1 e 12 correspondente a um mês do ano e verifique o trimestre a que este mês pertence</h3>
+        <input type="number" id="num120">
+        <input type="button" value="Calcular" onclick="q20()">
+        <p id="exibir10"></p>
+    </div>
+
+    
+
+
+    
+
+    <script src="./js/scripts.js"></script>
+    
+
+</body>
+</html>
