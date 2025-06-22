@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando o DOM</title>
+    <style>
+        body {
+            background: rgb(0, 255, 242);
+            color: black;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+
+   <h1>Introdução ao Dom</h1> 
+   <p>agora vai começar...</p> 
+   <p>Vamos usar o <strong>DOM em JavaScript</strong></p>
+   <P> Vi nessa aula que como podemos mudar a cor em diferentes partes do nosso codigo
+       um exemplo é ao colocar window.documento.getElementsByTagName( especifica a parte que vai muda ex h1 ) 
+       [indice da parte escolhida]</P>
+    <p> o professor ensinou fazendo isso e colocando em uma variavel, um outro exemplo é var corpo = window.document
+        .body     e depois ele faz corpo.style.color = 'NOME DA COR' 
+    </p>
+    <p>DA PRA ESCREVE NO SITE DE DUAS FORMAS:
+        PELO HTML UTILIZANDO O P \P COM SINAIS RELACIONAIS       /  PELO SCRIPT ONDE FAZEMOS window.document.write('frase')</p>
+   
+   
+        <div id='msg'>clique aqui</div>
+   <script>
+       var p1 = window.document.getElementsByTagName('P')[1]
+       window.document.write('OLHA'+p1.innerText) 
+       p1.style.color = 'blue'
+       var h1 = window.document.getElementsByTagName('h1')[0]
+       h1.style.color = 'red'
+       var corpo = window.document.body
+       corpo.style.color = 'green'
+       var idd = window.document.getElementById('msg')[0].write('Mano click aqui')
+   </script>
+</body>
+</html>

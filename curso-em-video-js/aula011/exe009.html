@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input#texto {
+            
+            width: 100px;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Digite o nome do seu pais</p>
+    <input type="text" id='texto'>
+    <input type="button" value="Verificar" id='ver'>
+    <div> Resultado ></div>
+    <script>
+        
+        var ver = document.getElementById('ver')
+        ver.addEventListener('click', clicar)
+        var p = document.getElementsByTagName('div')[0]
+        function clicar() {
+            var textoT = document.getElementById('texto')
+            if ('Brasil' == textoT.value) {
+                p.innerText +=`${textoT.value}Voce nasceu nos brasil`
+            } else {
+                p.innerText +=`Voce é estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>

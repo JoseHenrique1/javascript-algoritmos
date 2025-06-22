@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+    <style>
+        body{
+            background: white;
+            color: black;
+            font: normal 20pt Arial;
+        }
+
+        input {
+            background: rgb(90, 210, 214);
+            color: red;
+            width: 100px;
+            height: 30px;
+
+        }
+        p#area {
+            color: red;
+            margin-top: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Somando valores...</h1>
+
+    <input type="number" name="01" id="01"> +
+    <input type="number" name="02" id="02">
+    <input type="button" value="Somar" onclick="somar()">
+    <p id='area'>Resultado =</p>
+
+    <script>
+        function somar() {
+            var tex1 = window.document.getElementById('01')
+            var tex2 = window.document.getElementById('02')
+            var n1 = Number(tex1.value)
+            var n2 = Number(tex2.value)
+            var s = n1+n2
+            document.getElementById('area').innerHTML = `Resultad = <strong>${s}</strong>`  
+            
+
+        }
+
+    </script>
+</body>
+</html>

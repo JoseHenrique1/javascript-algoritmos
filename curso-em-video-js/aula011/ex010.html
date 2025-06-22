@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de mutas</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Diga a velocidade em que estava dirigindo! se for maior que 60 você sera multado</p>
+
+    <input type="number" name="txtvel" id="txtvel">Km/h
+    <input type="button" value="Verificar" id='a' >
+    <div id='res'>RESULTADO</div>
+
+    <script>
+        var a  = document.getElementById('a')
+        a.addEventListener('click', calcular)
+        function calcular() {
+            var txtv = document.getElementById('txtvel')
+            var vel = Number(txtv.value)
+            var res = document.getElementById('res')
+            res.innerHTML = `Sua velocidade é ${vel}`
+            if (vel>60) {
+                res.innerHTML += `<p id>Você foi multado por dirigir a <strong>${vel} Km/h</strong></p>`
+            } else {res.innerHTML = '<p>Parabens! Dirija sempre comforme as regras'}
+
+        }
+        
+    </script>
+</body>
+</html>
